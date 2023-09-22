@@ -1,0 +1,46 @@
+.recommended-property_section {
+    height: 65vh;
+    width: 70%;
+    position: relative;
+}
+
+
+.recommended-property_section .header-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommended-property_section .header-sec .allPropBtn {
+    background-color: transparent;
+    color: #737373;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+    top: -20px;
+}
+
+.recommended-property_section .text-intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.recommended-property_section h1 {
+    text-align: left;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.recommended-property_section p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #737373;
+    position: relative;
+    top: -30px;
+}

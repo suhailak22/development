@@ -1,0 +1,16 @@
+.project-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-content .left-panel{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+}
+.project-content .right-panel{
+    text-align: right;
+}
