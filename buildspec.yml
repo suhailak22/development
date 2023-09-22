@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18  # Use a Node.js version compatible with your dependencies
+      nodejs: 16  # Use a Node.js version compatible with your dependencies
     commands:
       - npm install -g npm@7  # Update npm to a more recent version
       - npm install  # Install Node.js dependencies
