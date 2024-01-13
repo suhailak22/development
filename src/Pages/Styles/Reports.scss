@@ -1,0 +1,194 @@
+$primary: var(--primary_color);
+$bg: var(--bg_color);
+$bg1: var(--bg1_color);
+$text: var(--text_color);
+
+.reports {
+  .main-section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    p {
+      margin: 0;
+      color: $text;
+    }
+  }
+  .header-card {
+    // position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: $bg1;
+    // padding: 10px 0;
+    // border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    .head-btn-grid {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 100%;
+      button {
+        // flex-grow: 1;
+        background-color: $bg1;
+        color: $text;
+      }
+      .btn-div {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        position: relative;
+        width: 50%;
+        // border-bottom: 2.5px solid #999;
+        color: #666;
+        // padding: 5px;
+        cursor: pointer;
+        // height: 100%;
+        span{
+            margin: 10px;
+            // font-weight: 550;
+            font-size: 0.85rem;
+        }
+        // border: 1px solid;
+      }
+      .selected-filter:after {
+        content: "";
+        display: block;
+        border: 1.5px solid;
+        width: 100%;
+        transform: scale(0);
+        position: absolute;
+        bottom: -2px;
+      }
+      .selected-filter {
+        color: $primary;
+        border-bottom: 2.5px solid $bg;
+      }
+      .btn-div:hover {
+        color: $primary;
+      }
+      .selected-filter:after {
+        transform: scale(1);
+        transition: 1500ms;
+      }
+    }
+  }
+  .table-card{
+    width: auto;
+    margin: 2% 0;
+    .icon-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      button{
+       color: $primary; 
+       background-color: $bg1;
+       width: 80px; 
+        padding: 0 8px;
+       font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        // border: none;
+        border: 1px solid $primary;
+        border-radius: 5px;
+        span {
+        }
+        .btn-name{
+          font-size: 12px;
+        }
+      }
+      button:hover {
+        // background-color: $bg;
+        background-color: $primary;
+        color: #fff;
+        
+        // justify-content: space-between;
+
+        cursor: pointer;
+        
+      }
+      button:hover {
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+  .card-list {
+    width: 100%;
+    padding: 10px 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 33% 33% 33%;
+    .ant-card {
+      box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+      background-color: $bg1;
+      font-family: 'Poppins';
+      .card-content{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .card-head {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $bg;
+        h3 {
+          margin: 0;
+          color: $text;
+        }
+        button {
+          border: 0;
+          color: $primary;
+          background-color: $bg1;
+        }
+      }
+    }
+  }
+}
+.user-container {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  width: 100%;
+  
+  .logo-cont {
+      width: 20%;
+      height: 100%;
+      aspect-ratio: 1;
+      background-color: transparent;
+      // overflow: hidden;
+      // padding: 1%;
+      position: relative;
+      img {
+        width: 100%;
+        border-radius: 50px;
+          height: 100%;
+          object-fit: cover;
+      }
+      .block{
+        position: absolute;
+        bottom: 3px ;
+        right: 0;
+        display: flex;
+        align-items: flex-end;
+        // // z-index: 99;
+        span{
+          color: $primary;
+        }
+      }
+  }
+
+  .userDetail {
+      p {
+          margin: 0;
+      }
+
+      span {
+          color: $primary;
+          font-size: 11px;
+      }
+  }
+}

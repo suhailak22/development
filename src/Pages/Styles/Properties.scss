@@ -1,0 +1,44 @@
+$primary: var(--primary_color);
+$bg: var(--bg_color);
+$bg1: var(--bg1_color);
+$text: var(--text_color);
+
+
+.properties {
+    .ant-table-row{
+        cursor: pointer;
+    }
+    .head-left{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        button{
+            // background-color: rgb(71, 255, 71);
+            color: $text;
+        }
+    }
+    .property-name-container{
+        p{
+          font-size: 13px;
+          margin: 0;
+        }
+        span{
+            color: $primary;    
+        }
+      }
+    .table-img {
+        height: 100px;
+        width: 100px;
+        aspect-ratio: 1;
+        // border: 1px solid;   
+        margin: 1%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    }
+
+    

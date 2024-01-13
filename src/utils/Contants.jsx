@@ -1,0 +1,7 @@
+export const APP_BASE_URL = 'https://backend.albionpropertyhub.com/api/'
+// export const APP_BASE_URL = 'https://avanexa.in/albion/api/'
+export const IMAGE_BASE_URL = ''
+export const BLOG_IMAGE_BASE_URL = ''
+export const BANNER_IMAGE_BASE_URL = ''
+export const PROFILE_IMAGE_BASE_URL = ''
+export const BACKEND_BASE_URL = 'https://backend.albionpropertyhub.com/api'

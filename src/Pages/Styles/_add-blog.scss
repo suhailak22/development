@@ -1,0 +1,47 @@
+.add-blog-page{
+        display: flex;
+        height: 99vh;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: flex-start;
+        padding: 50px;
+
+    .add-blog-inner-section{
+        width: 90%;
+        height: 100%;
+        max-height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .blog-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 80%;
+        .ant-upload,
+        .ant-upload-list-item-container{
+            width: 100% !important;
+            height: 250px !important;
+            color: #8C193F !important;
+            font-family: 'Poppins';
+        }
+        .ant-input{
+            width: 80%;
+            height: 40px;
+        }
+    }
+    .add-blog-btn{
+        background-color: #8C193F !important;
+        color: #fff !important;
+        margin-top: 40px;
+        width: 140px;
+    }
+}
+
+:where(.css-dev-only-do-not-override-1pj7lgw).ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item-thumbnail, :where(.css-dev-only-do-not-override-1pj7lgw).ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item-thumbnail, :where(.css-dev-only-do-not-override-1pj7lgw).ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload-list.ant-upload-list-picture-circle .ant-upload-list-item-thumbnail, :where(.css-dev-only-do-not-override-1pj7lgw).ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload-list.ant-upload-list-picture-circle .ant-upload-list-item-thumbnail, :where(.css-dev-only-do-not-override-1pj7lgw).ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item-thumbnail img, :where(.css-dev-only-do-not-override-1pj7lgw).ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item-thumbnail img, :where(.css-dev-only-do-not-override-1pj7lgw).ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload-list.ant-upload-list-picture-circle .ant-upload-list-item-thumbnail img, :where(.css-dev-only-do-not-override-1pj7lgw).ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload-list.ant-upload-list-picture-circle .ant-upload-list-item-thumbnail img{
+    object-fit: contain !important;
+}

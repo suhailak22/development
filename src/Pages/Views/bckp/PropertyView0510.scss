@@ -1,0 +1,187 @@
+$primary: var(--primary_color);
+$bg: var(--bg_color);
+$bg1: var(--bg1_color);
+$text: var(--text_color);
+
+.property-view {
+    position: relative;
+    .user-cont{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+        .avatar-cont{
+            width: 75px;
+            height: 75px;
+            aspect-ratio: 1;
+            border-radius: 75px;
+            overflow: hidden;
+            margin: auto 0;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .meta-cont {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-evenly;
+        }
+        .count-cont {
+            text-align: center;
+            margin: auto 0;
+        }
+    }
+    .col-2{
+        position: fixed;
+        right: 1%;
+        width: 300px;
+        .ant-card {
+            
+            // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            
+            .ant-card-body {
+          
+                width: 100%;
+                
+                .content-right{
+                    text-align: center;
+                    
+                    padding-left:2%;
+                    .status-and-back{
+                        display: grid;
+                        gap: 5px;
+                        
+                    }
+                    .right-main{
+                        display: grid;
+                        margin-top: 5px;
+                        gap: 10px;
+                    }
+                    .content-cont {
+                        text-align: left;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 6%;
+                        .content {
+                            display: flex;
+                            gap: 5%;
+                            margin-bottom:15px ;
+                            justify-content: space-between;
+                            p {
+                                margin: 0;
+                                font-weight: 600;
+                                letter-spacing: 0.5px;
+                                font-size: 15px;
+                                text-align: right;
+                            }
+        
+                            span {
+                                font-size: 15px;
+                                color: #999;
+                            }
+                        }
+                    }
+                    button{
+                        width: 80%;
+                        padding: 2px;
+                        margin: 0 auto;
+        
+                    }
+                }
+
+                .ant-card-meta {
+                    width: 100%;
+
+                }
+
+            }
+        }
+    }
+    p,
+    h1,h3 {
+        margin: 0;
+    }
+    .table-card {
+        width: 64%;
+        .content-left {
+            position: relative;
+            width: 100%;
+            .property_img_container {
+                aspect-ratio: 1.5/1;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .property-details{
+                width: 100%;
+                .features   {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 3%;
+                    .single-features{
+                        display: flex;
+                    }
+                }
+                .amenities{
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: 2%;
+                    .amenity{
+                        text-align: center;
+                        span{
+                            color: #999;
+                            margin-bottom: 2px;
+                        }
+                        p{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            .contact-details{
+                padding: 2%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                .map-container{
+                    // width: 50%;
+                    .map{
+                        border: 0;
+                        background: transparent;
+                        cursor: pointer;
+                    }
+                }
+                .contact{
+                    width: 40%;
+                    h3{
+                        margin-bottom:10px ;
+                    }
+                    .user-cont{
+                        gap: 10%;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    button{
+        height: 150px;
+        aspect-ratio: 1;
+    }
+}
+:where(.css-dev-only-do-not-override-17a39f8).ant-modal .ant-modal-footer{
+    display: none;
+}

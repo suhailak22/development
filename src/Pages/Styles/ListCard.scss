@@ -1,0 +1,239 @@
+$primary: var(--primary_color);
+$bg: var(--bg_color);
+$bg1: var(--bg1_color);
+$text: var(--text_color);
+
+.table-card {
+  background-color: $bg1;
+  width: 100vw;
+  text-align: left;
+  padding: 2%;
+  margin: 2%;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+  .icon-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    button {
+      background-color: transparent;
+      color: $primary;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      span {
+      }
+    }
+    button:hover {
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+  .card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding: 0 2%;
+    margin-bottom: 5px;
+    .filters {
+      display: flex;
+      gap: 5%;
+      align-items: center;
+      // width: 40%;
+
+      .ant-select {
+        width: 33% ;
+        color: $text;
+        border-radius: 5px;
+        overflow: hidden;
+        /* border-bottom: 0; */
+        // padding: 4px;
+        // background: $bg;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        .ant-select-selector {
+          color: $text;
+          border: none;
+          border-radius: 0;
+          background: transparent;
+        }
+        .ant-select-arrow {
+          color: $text;
+        }
+        .ant-select-selection-placeholder {
+          color: $text;
+        }
+      }
+
+      .search-cont {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .ant-input-affix-wrapper{
+
+        }
+        input {
+          color: $text;
+          border-radius: 5px;
+          border: none;
+        }
+        button{
+          width: 40%;
+          background-color: $primary;
+          color: #fff;
+          border-radius: 5px;
+          height: 2.8em;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th,
+:where(.css-dev-only-do-not-override-17a39f8).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td {
+  padding: 10px !important;
+  background-color: $bg !important;
+}
+.ant-table-wrapper .ant-table-thead > tr > th,
+:where(.css-dev-only-do-not-override-17a39f8).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td
+  .ant-table-cell {
+  color: $text !important;
+}
+.ant-table-wrapper .ant-table-filter-trigger {
+  margin: 0 !important;
+}
+tr.ant-table-row-selected {
+  //   box-shadow: 0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3);
+}
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-row-selected > th,
+:where(.css-dev-only-do-not-override-17a39f8).ant-table-wrapper
+  .ant-table-tbody
+  > tr.ant-table-row-selected
+  > td {
+  background-color: $bg !important;
+}
+.ant-table-cell-row-hover {
+  background-color: $bg !important;
+}
+.ant-table-cell {
+  color: #999 !important;
+}
+tr.ant-table-row-selected:hover {
+  background-color: $bg !important;
+}
+
+.ant-table-row {
+  background-color: $bg1 !important;
+}
+.ant-pagination .ant-pagination-item a,
+.ant-pagination-prev .anticon,
+.ant-pagination-next .anticon,
+.ant-pagination-item-ellipsis {
+  color: $text !important ;
+}
+.ant-pagination .ant-pagination-item-active {
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+.ant-pagination .ant-pagination-item-active a {
+  color: #fff !important;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-placeholder {
+  // background-color: $bg;
+}
+.ant-table-wrapper .ant-table-column-sorter {
+  color: $text !important;
+}
+.ant-tooltip-open {
+  // background-color: $bg !important;
+}
+.ant-table-column-has-sorters:hover {
+  background-color: $bg !important;
+}
+.ant-table-filter-trigger {
+}
+.ant-table-wrapper .ant-table-filter-trigger:hover {
+  color: $text !important;
+  background-color: $bg1 !important;
+}
+.ant-table-wrapper .ant-table-filter-trigger {
+  color: $text !important;
+}
+.ant-btn-primary {
+  color: #fff !important;
+  background-color: $primary !important;
+}
+.ant-tag {
+  background-color: var(--primary_color);
+  color: #fff;
+  border: none;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  font-family: 'Poppins';
+  // display: flex;
+  // span{
+  //   border-radius: 50px;
+  //   height: 2px;
+  //   width: 2px;
+  // }
+}
+.ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+  color: #fff !important;
+  background-color: #be2255 !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner,
+:where(.css-dev-only-do-not-override-17a39f8).ant-checkbox-checked:hover
+  .ant-checkbox-inner,
+:where(.css-dev-only-do-not-override-17a39f8).ant-tree
+  .ant-tree-checkbox-checked:not(.ant-tree-checkbox-disabled):hover
+  .ant-tree-checkbox-inner,
+:where(.css-dev-only-do-not-override-17a39f8).ant-tree
+  .ant-tree-checkbox-checked:not(.ant-tree-checkbox-disabled)
+  .ant-tree-checkbox-inner {
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner:hover {
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+.ant-checkbox-indeterminate .ant-checkbox-inner:after {
+  background-color: $primary !important;
+}
+
+.ant-btn-link:not(:disabled):not(.ant-btn-disabled):hover,
+:where(.css-dev-only-do-not-override-17a39f8).ant-btn-link:not(:disabled):not(
+    .ant-btn-disabled
+  ) {
+  color: $primary !important;
+}
+.ant-table-placeholder,
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-placeholder:hover > th,
+:where(.css-dev-only-do-not-override-17a39f8).ant-table-wrapper
+  .ant-table-tbody
+  > tr.ant-table-placeholder:hover
+  > td,
+:where(.css-dev-only-do-not-override-17a39f8).ant-table-wrapper
+  .ant-table-tbody
+  > tr.ant-table-placeholder {
+  background-color: $bg !important;
+}
+.ant-empty-description {
+  color: $text !important;
+}
+.ant-table-cell{
+  border-color: $bg!important;
+}
+.ant-table-tbody >tr >th{
+  border-bottom: 1px solid $bg!important;
+}

@@ -1,0 +1,321 @@
+@import url(./../../Global.scss);
+.dashboard{
+  display: flex;
+  width: 100%;
+  background-color: #222;
+} 
+$primary: var(--primary_color);
+
+
+.dashboard .main-section .analytics-section {
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.dashboard .main-section .analytics-section .column1 {
+  width: 25%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  // justify-content: space-between;
+  gap: 5px;
+}
+.dashboard .main-section .analytics-section .column1 .login-chart {
+  height: 80%;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.dashboard .main-section .analytics-section .recently-sold {
+  border: 1px solid #ccc;
+  padding: 2% 5%;
+  border-radius: 5px;
+  // background-color: #fff;
+}
+
+.dashboard .main-section .analytics-section .recently-sold .prop-table {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.dashboard .main-section .analytics-section .recently-sold .prop-name {
+  font-weight: 600;
+}
+
+.dashboard .main-section .analytics-section .recently-sold .prop-table-row {
+ 
+  height: 6vh;
+  // background-color: #8C193F ;
+}
+
+.dashboard .main-section .analytics-section .login-status {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2%;
+  height: 200px;
+  width: 95%;
+}
+
+.dashboard .main-section .analytics-section .row2,.dashboard .main-section .analytics-section .row1{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboard .main-section .analytics-section .row2{
+  display: flex;
+  gap: 10px;
+}
+.dashboard .page-section .cards-cont {
+  width: 100%;
+  height: 50%;
+}
+
+.dashboard .page-section .dash-cards {
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 10px;
+  // justify-content: space-evenly;
+  // align-items: flex-start;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.dashboard .page-section .dash-cards .dash-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding:  10px;
+  gap: 1em;
+  // width: 285px;
+}
+
+.dashboard .page-section .dash-cards .dash-card .dash-card-left {
+  // width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dashboard .page-section .dash-cards .dash-card .card-main{
+  display: flex;
+  justify-content: space-between;
+  // height: 80%;
+  width: 85%;
+}
+
+.dashboard .page-section .dash-cards .dash-card .dash-card-left .card-head {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 5px;
+  // border: 1px solid;
+  padding: 5%;
+}
+.dashboard .page-section .dash-cards .dash-card .dash-card-left .card-head h1{
+  margin: 0;
+  font-size: 1.3em;
+}
+.dashboard .page-section .dash-cards .dash-card  button {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  width: 60%;
+  margin-bottom: 5px;
+  color: $primary;
+}
+
+.dashboard .page-section .dash-cards .dash-card .dash-card-content .card-depth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.dashboard .page-section .dash-card p {
+  margin: 0;
+  color: #999;
+  font-size: 13px;
+}
+
+.dashboard .page-section .dash-cards .dash-card .card-icon-cont {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8C193F;
+    color: white;
+    border-radius: 50px;
+    font-size: 25px;
+    padding: 25%;
+}
+.dashboard .page-section .dash-card .dash-card-count{
+
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.dashboard .page-section .dash-card .dash-card-count p {
+  
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.dashboard .page-section .dash-card .dash-card-right {
+//  height: 100%;
+ width: 48% ;
+ display: flex;
+    align-items: center;
+}
+.dashboard .page-section .dash-card .dash-card-right .graph-cont{
+ height: 50%;
+ width: 100%;
+ display: flex;
+ justify-content: flex-end;
+}
+.dashboard  .property-card .property-chart-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.dashboard  .property-card .property-chart-head .ant-select-selector{
+  background-color: transparent;
+  color: var(--text_color);
+  border: none;
+}
+.dashboard  .property-card .property-chart-head p{
+  margin: 0;
+}
+.dashboard  .property-card .property-card-content p{
+  margin: 0;
+  font-size: 25px;
+  font-weight: 300;
+}
+.dashboard  .property-card .property-card-content span{
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+}
+.dashboard  .property-card .property-card-content h1{
+  font-size: 20px;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  
+}
+.dashboard  .property-card .property-card-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.dashboard  .property-card{
+
+  padding:2%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  width: 65%;
+  // height:99%;
+
+}
+.dashboard .column3{
+  width: 25%;
+}
+.dashboard .piechart-card .pie-chart{
+  padding: 10%;
+}
+.dashboard .piechart-card{
+  padding: 2%;
+}
+.dashboard .property-card .property-chart{
+  height: 100%;
+  width: 100%;
+}
+.dashboard .card{
+  background-color: var(--bg1_color);
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.dashboard .piechart-card .chart-content{
+  display: flex;
+  height: 11%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard .piechart-card .chart-content .legend-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.dashboard .piechart-card .chart-content p{
+  margin: 0;
+  font-size: 12px;
+  
+}
+.dashboard .piechart-card .chart-content .legend-container .dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+}
+
+.dashboard .piechart-card .pie-main{
+  position: relative;
+}
+.dashboard .piechart-card .piechart-overlay{
+  position: relative;
+  bottom: 50%;
+  h3{
+    font-size: 1em;
+  }
+  // border: 1px solid;
+  // height: 90%;
+  // width: 90%;
+}
+// .recharts-responsive-container{
+//   /* border: 1px solid #ccc; */
+//   border-radius: 10px;
+//   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+// }
+// .recharts-wrapper{
+//   padding: 2% ;
+
+// }
+
+@media (max-width : 1200px){
+  .dashboard .page-section .dash-cards .dash-card .dash-card-right {
+    display: none;
+  }
+  .dashboard .page-section .dash-cards .dash-card .card-head{
+    flex-direction: row;
+    width: 100%!important;
+  }
+  .dashboard .page-section .property-card{
+    flex: 1;
+  }
+}
+@media (max-width : 991px){
+  .dashboard .page-section .dash-cards{
+    grid-template-columns: 50% 50%;
+  }
+  .dashboard .page-section .dash-cards .dash-card {
+    padding: 5px;
+    gap: 0;
+  }
+  .dashboard .page-section .dash-cards .dash-card .dash-card-left .card-head {
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  .piechart-overlay h3{
+    font-size: 12px;
+  }
+}

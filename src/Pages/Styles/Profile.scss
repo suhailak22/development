@@ -1,0 +1,178 @@
+$primary: var(--primary_color);
+$bg: var(--bg_color);
+$bg1: var(--bg1_color);
+$text: var(--text_color);
+
+
+.profile {
+    h3,
+    p {
+        margin: 0;
+    }
+    .page-content{
+ 
+        display: flex;
+        flex-direction: column;
+        .page-section{
+            position: relative;
+        }
+        .banner{
+            width: 100%;
+            aspect-ratio: 5/1.3;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .main-section{
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    .col1 {
+
+        width: 25%;
+        padding: 1.2% 0 1% 1%;
+
+        .profile-card {
+            position: absolute;
+            // bottom: 25px;
+            box-shadow: 2px 4px 10px #cccccc26;
+            transform: translateY(-150px);
+            width: 25%;
+            height: 500px;
+            background-color: $bg1;
+            border-radius:10px;
+            padding: 10px;
+            // margin-top: 5%;
+            .profile-cont {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                border-bottom: 1px solid #ccc;
+
+                .img-cont {
+                    height: 100px;
+                    width: 100px;
+                    aspect-ratio: 1;
+                    border-radius: 150px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .img-cont:hover{
+                    transform: scale(1.05);
+                    transition: 500ms;
+                    
+                }
+
+                .img-content {
+                    text-align: center;
+                    h3{
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+
+            .content-cont {
+                width: 100%;
+                height: 60%;
+                display: flex;
+                flex-direction: column;
+                gap: 6%;
+                padding: 5%;
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    p {
+                        font-weight: 600;
+                        letter-spacing: 0.5px;
+                        font-size: 15px;
+                    }
+
+                    span {
+                        font-size: 15px;
+                        color: #999;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        align-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .col2 {
+        width: 60%;
+
+        .head-dividers {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+            .div1,
+            .div2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 5px;
+                position: relative;
+                width: 50%;
+                border-bottom: 2.5px solid #999;
+                color: #666;
+                padding-bottom: 5px;
+                cursor: pointer;
+            }
+            .div1:after, .div2:after {
+                content: "";
+                display: block;
+                border: 1.5px solid ;
+                width: 100%;
+                transform: scale(0);
+                position: absolute;
+                bottom: -2px;
+
+            }
+            .clicked{
+                color: $primary;
+                // transition: 1s;
+                border-bottom: 2.5px solid $bg1;
+                // border-bottom: 2px solid $primary;
+            }
+            .clicked:hover{
+                color: $primary;
+                // border-bottom: 2px solid $primary;
+                
+            }
+            .clicked:after{
+                // content: "";
+                // display: block;
+                // border: 1px solid ;
+                // width: 100%;
+                transform: scale(1);
+                transition: 500ms;
+                // margin-top: 7px;
+            }
+
+        }
+        .card-body{
+            width: 95%;
+            padding: 5% 1%;
+        }
+    }
+}
